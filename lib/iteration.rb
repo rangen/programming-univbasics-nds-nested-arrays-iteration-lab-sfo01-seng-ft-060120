@@ -26,7 +26,7 @@ def total_even_pairs(src)
 
   while pair_index < src.length do
     if (src[pair_index][0].even? && src[pair_index][1].even?)
-      total += src[pair_index[0] + src[pair_index][1]]
+      total += src[pair_index][0] + src[pair_index][1]]
     end
 
     pair_index += 1
