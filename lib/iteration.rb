@@ -17,7 +17,7 @@ def find_greater_pair(src)
       larger_numbers << src[pair_index][0] > src[pair_index][1] ? src[pair_index][0] : src[pair_index][1]
       pair_index += 1
   end
-  pair_index
+larger_numbers
 end
 
 def total_even_pairs(src)
