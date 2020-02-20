@@ -21,11 +21,15 @@ larger_numbers
 end
 
 def total_even_pairs(src)
-  # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
-  # if both numbers in the pair are even, then add both those numbers to the
-  # total
-  #
-  # As a reminder any number % 2 will return 0 or 1. If the result is 0, then
-  # the number was even. Review the operator documentation if you've forgotten
-  # this!
+  total = 0
+  pair_index = 0
+
+  while pair_index < src.length do
+    if (src[pair_index][0].even? && src[pair_index][1].even?)
+      total += src[pair_index[0] + src[pair_index][1]]
+    end
+
+    pair_index += 1
+  end
+  total
 end
